@@ -6,6 +6,11 @@ pipeline {
 	tools  {
 		maven 'm3.6'
 	}
+	parameters {
+		 { string(name: 'MVN_OPTION', defaultValue: 'package', description: '') 
+		 }
+
+
 	stages {
 		
 		stage (build){
