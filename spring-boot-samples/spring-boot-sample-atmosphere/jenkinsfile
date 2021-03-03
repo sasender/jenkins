@@ -7,7 +7,7 @@ pipeline {
 		maven 'm3.6'
 	}
 	parameters {
-		 { string(name: 'MVN_OPTION', defaultValue: 'package', description: '') 
+		 { string(name: 'MVN_OPTION', defaultValue: 'package', description: ''
 		 }
 	}	 
 	stages {
