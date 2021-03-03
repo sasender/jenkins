@@ -7,12 +7,7 @@ pipeline {
 		maven 'm3.6'
 	}
 	stages {
-		stage ('checkout'){
-			steps {
-				git 'https://github.com/sasender/jenkins.git'
-			}
-		}	
-	
+		
 		stage (build){
 			steps {
 				sh "mvn clean package -f $myrepo/pom.xml"
@@ -31,3 +26,5 @@ pipeline {
 		}
 	}
 }	
+
+	
