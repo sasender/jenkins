@@ -14,7 +14,7 @@ pipeline {
 		
 		stage (build){
 			steps {
-				sh "mvn clean package -f $myrepo/pom.xml"
+				sh "mvn clean $MVN_OPTION -f $myrepo/pom.xml"
 			}
 		}	
 		
